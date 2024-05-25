@@ -19,7 +19,7 @@ function barra() {
 function Eliminar() {
     const userId = new URLSearchParams(window.location.search).get('id');
     if (userId) {
-        axios.delete(`http://127.0.0.1:8000/deleteUser?id=${userId}`)
+        axios.delete(`https://bakend-967m.onrender.com/deleteUser?id=${userId}`)
             .then(response => {
                 console.log(response.data);
                 alert("Usuario eliminado exitosamente");
@@ -42,7 +42,7 @@ function showMessage(message) {
 window.onload = function() {
     const userId = new URLSearchParams(window.location.search).get('id');
     if (userId) {
-        axios.get(`http://127.0.0.1:8000/getUserInfo?id=${userId}`)
+        axios.get(`https://bakend-967m.onrender.com/getUserInfo?id=${userId}`)
             .then(response => {
                 console.log(response.data);
                 if (response.data.length > 0) {

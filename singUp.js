@@ -48,7 +48,7 @@ contenedor.addEventListener('submit', function(event) {
         Brd: brdInput.value
     };
 
-    axios.post('http://127.0.0.1:8000/createUser', postData)
+    axios.post('https://bakend-967m.onrender.com/createUser', postData)
         .then(function(response) {
             console.log(response.data);
             alert('Nuevo usuario creado exitosamente');
