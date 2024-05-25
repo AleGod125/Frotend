@@ -52,7 +52,7 @@ contenedor.addEventListener('submit', function(event) {
         .then(function(response) {
             console.log(response.data);
             alert('Nuevo usuario creado exitosamente');
-            window.location.href = "login.html";
+            window.location.href = "index.html";
         })
         .catch(function(error) {
             console.error('Error al crear el nuevo usuario:', error);
